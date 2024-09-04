@@ -21,6 +21,11 @@
 
 .two-input-line {
   display: flex;
+  margin-top: 30px;
   justify-content: space-between;
   gap: 20px;
+}
+
+.one-input-line {
+  margin-top: 15px;
 }

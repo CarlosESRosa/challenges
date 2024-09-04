@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import "./App.css";
 import TextInput from "./components/TextInput/TextInput";
+import EmailInput from "./components/EmailInput/EmailInput";
 
 function App() {
   const [inputValue, setInputValue] = useState("");
@@ -27,6 +28,15 @@ function App() {
             isRequired={true}
           />
         </div>
+        <div className="one-input-line">
+          <EmailInput
+            label="Email Address"
+            value={inputValue}
+            onChange={handleInputChange}
+            isRequired={true}
+          />
+        </div>
+        <div className="two-input-line"></div>
       </div>
     </div>
   );
